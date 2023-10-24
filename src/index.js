@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import {
   createBrowserRouter,
+  createHashRouter,
   RouterProvider,
 } from "react-router-dom";
 import App from './App';
@@ -18,7 +19,7 @@ import Page6 from './Component/Series/Pages/PagesNumber/Page6';
 import Page7 from './Component/Series/Pages/PagesNumber/Page7';
 import SingleSerie from './Component/SingleSerie';
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <Home />,
