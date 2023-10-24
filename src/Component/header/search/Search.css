@@ -1,0 +1,32 @@
+form{
+    width: 500px;
+    position: relative;
+    z-index: 55;
+}
+input{
+    width: 80%;
+    padding: 4px 10px;
+    border-radius: 15px 0 0 15px;
+    border: none;
+}
+button{
+    padding: 4px 0px;
+    background-color: rgb(250,66,56);
+    border: none;
+    color: white;
+    font-weight: 700;
+    width: 20%;
+}
+button:hover,
+button:focus {
+    box-shadow: 0px 0 5px rgb(255, 13, 0);
+    color: rgb(59, 59, 59);
+}
+.search-btn{
+    border-radius: 0 15px 15px 0;
+}
+@media (max-width:1200px) {
+    form{
+        width: auto;
+    }
+}

@@ -1,0 +1,75 @@
+.card-series{
+    background-color: transparent;
+    height: 400px;
+    position: relative;
+}
+.card-series::before{
+    content:"";
+    width: 94%;
+    height: 52%;
+    bottom: 15px;
+    opacity: 0;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.68);
+    transition: 0.2s ease-in-out;
+}
+.card-series:hover::before{
+    opacity: 1;
+}
+.card-series h4{
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    width: 93%;
+    text-align: center;
+    bottom: 45%;
+    z-index: 5;
+    opacity: 0;
+    text-transform: uppercase;
+    transition: 0.2s ease-in-out;
+}
+.card-series:hover h4{
+    opacity: 1;
+}
+.card-series p{
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    width: 93%;
+    text-align: center;
+    bottom: 25%;
+    z-index: 5;
+    opacity: 0;
+    transition: 0.2s ease-in-out;
+}
+.card-series:hover p{
+    opacity: 1;
+}
+.card-series h6{
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    width: 93%;
+    text-align: center;
+    bottom: 15%;
+    z-index: 5;
+    opacity: 0;
+    transition: 0.2s ease-in-out;
+}
+.card-series:hover h6{
+    opacity: 1;
+}
+.card-series h5{
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    width: 93%;
+    text-align: center;
+    bottom: 5%;
+    z-index: 5;
+    opacity: 0;
+    transition: 0.2s ease-in-out;
+}
+.card-series:hover h5{
+    opacity: 1;
+}

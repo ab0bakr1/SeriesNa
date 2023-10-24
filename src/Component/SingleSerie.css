@@ -1,0 +1,35 @@
+.SingleSerie{
+    width: 100%;
+}
+.SingleSerie-img{
+    height: 58vh;
+}
+.SingleSerie-img img{
+    width: 100%;
+    height: 100%;
+}
+.SingleSerie .SingleSerie-info .h2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-transform: capitalize;
+}
+.SingleSerie .SingleSerie-info .h2 h2{
+    font-size: 20px;
+    color: aliceblue;
+}
+.SingleSerie .SingleSerie-info .h3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-transform: capitalize;
+}
+.SingleSerie .SingleSerie-info .h3 h3{
+    font-size: 20px;
+    color:  rgb(255, 13, 0);
+}
+.SingleSerie .SingleSerie-info h4{
+    font-size: 25px;
+    color: aliceblue !important;
+}

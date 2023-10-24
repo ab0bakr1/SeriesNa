@@ -1,0 +1,18 @@
+.pages{
+    justify-content: center;
+    list-style: none;
+    gap: 15px;
+}
+.pages li{
+    padding: 4px 9px;
+    background-color: rgb(250,66,56);
+    cursor: pointer;
+    border: blueviolet 2px solid;
+}
+.pages li:focus{
+    background-color: rgba(250, 66, 56, 0.397);   
+}
+.pages li a{
+    text-decoration: none;
+    color: white;
+}
