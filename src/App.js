@@ -18,8 +18,3 @@ const App =()=> {
 }
 
 export default App;
-{/*       <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/Series' element={<Series/>} />   
-        <Route path="/singleshow/:id" component={<SingleSerie />}/>
-      </Routes>  */}

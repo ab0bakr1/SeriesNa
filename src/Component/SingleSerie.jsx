@@ -30,20 +30,30 @@ const SingleSerie = () => {
       <Container>
         <Row md={2} sm={1} className="my-5">
           <div className="SingleSerie-img">
-            <img src={SingleSerie.image.original} alt={SingleSerie.name} />
-          </div>
+          <img
+            src={
+              SingleSerie.image
+                ? SingleSerie.image.medium
+                : "https://www.publicdomainpictures.net/pictures/280000/velka/not-found-image-15383864787lu.jpg"
+            }
+            alt={SingleSerie.name}
+          />          </div>
           <div className="SingleSerie-info">
             <div className="m-auto">
               <h1>{SingleSerie.name}</h1>
             </div>
             <div className="h2 d-flex">
-              <h2>{`premiered:${SingleSerie.premiered.slice(0,4)}`}</h2>
+              <h2>{`premiered:${SingleSerie.premiered}`}</h2>
               <h2>{`status:${SingleSerie.status}`}</h2>
               <h2>{`language:${SingleSerie.language}`}</h2>
-              <h2>{`rating:${SingleSerie.rating.average}`}</h2>
+              <h2>{`rating:
+              ${SingleSerie.rating
+                ?SingleSerie.rating.average
+                :"no rating"}`}</h2>
             </div>
             <div className="h3 d-flex">
-              {SingleSerie.genres.map((genre) => (
+            {SingleSerie.genres &&
+              SingleSerie.genres.map((genre) => (
                 <h3 key={genre}>
                   {genre}
                 </h3>
